@@ -18,7 +18,7 @@ const Product = () => {
     const [ isLoading, setIsLoading ] = useState(true)
     const [ product, setProduct ] = useState({})
     const [ error, setError ] =useState(false)
-    
+    const [ showBtn, setShowBtn] = useState(false)
 
 
     const { comments, creatorId} = product
@@ -45,11 +45,15 @@ const Product = () => {
     }, [path])
 
    //Detecta si es el creador para displayear el button de eliminar
-   const canDelete = async () => {    
-        if(user.uid === creatorId){
-            return true
+      
+        const canDelete = () => {
+            if(user.uid === creatorId){
+                return true
+            }
         }
-   }
+      
+       
+   
   
    const handleDelete = () => {
     Swal.fire({
@@ -207,6 +211,8 @@ const Product = () => {
                         <p className="votes">
                             <span className="votes-border">{product.votes}</span> {''}
                         votes</p>
+
+
                         {
                         canDelete() && <button type="button" className="delete-button"
                         onClick={handleDelete}>Eliminar</button>
