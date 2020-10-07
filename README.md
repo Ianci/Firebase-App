@@ -11,3 +11,4 @@ Los productos más votados aparecerán en orden ascendente en la sección 'Popul
 
 El layout se hizo desde 0 con CSS vanilla, sin ningún framework y totalmente responsive.
 
+Prueba la App creando tu propio curso !
