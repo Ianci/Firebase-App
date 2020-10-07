@@ -1,6 +1,6 @@
 # Firebase-Course-App
 
-App desarrollada con React en el Front y Firebase en el BackEnd
+App desarrollada con React en el Front y Firebase en el BackEnd, validación de formularios con Formik & Yup y ruotes con React-Router-Dom
 
 La aplicación en cuestión consiste en una página web dónde creadores de contenido pueden subir sus propios cursos con una descripción detallada del mismo
 
