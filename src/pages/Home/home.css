@@ -1,0 +1,121 @@
+.products-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 10px;
+    color: #3c3b37;
+}
+.image-product {
+    background-size: cover;
+    position: sticky;
+}
+.image-prod{
+    width: 100%;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    border-radius: 3px;
+    display: block;
+}
+.image-prod:hover{
+    opacity: 0.9
+}
+.content-wrapper{
+    border: none;
+    border-bottom: none;
+    border-top: none;
+    outline: none;
+    border-radius: 4px;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    width: 95%;
+    height: 160px;
+    overflow: hidden;
+    display: flex;
+    margin-top: 1rem;
+    color: #3c3b37;
+}
+.hr-line{
+    outline: none;
+    width: 90%;
+     margin-top: 1.2rem;
+     margin-bottom: 1.2rem;
+     color:rgb(189, 178, 178)
+}
+.product-text{
+    font-weight: 700;
+    font-size: 1.2rem;
+    align-self: start;
+    width: 100%;
+    display: inline;
+    color:#0e1111;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+.product-description{
+    font-size: 1rem;
+    color:#2F4F4F;
+    width: 90%;
+    position: relative;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+.product-content{
+    margin-left: 3rem;
+    width: 100%;
+}
+.icons-and-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color:#0e1111;
+    height: 70px
+}
+.product-date {
+    display: inline;
+    width: 27%;    
+    text-align: end;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #0e1111;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 50px;
+}
+.product-header{
+    display: flex;
+    justify-content: stretch;
+    align-items: start;
+}
+.span-id{
+    cursor: pointer;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+@media screen and (max-width: 960px){
+    .image-prod{
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .content-wrapper{
+        margin: 0;
+        height: 220px;
+        width: 110%;
+    }
+    .image-product{
+        padding: 0;
+        height: 100px;
+    }
+    .product-content{
+        margin-left: 0.5rem;    
+    }
+    .product-text{
+        width: 50%;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .product-date{
+        margin: 0;
+        margin-left: 15px;
+    }
+}
